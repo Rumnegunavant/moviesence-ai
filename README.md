@@ -63,6 +63,7 @@ A simple **Data Engineering + Agentic AI** project that generates movie data, cl
 ## 🚀 How to Run
 
 pip install pandas matplotlib
+
 python main.py
 
 ---
@@ -79,7 +80,6 @@ movielens-ai/
 ├── chart_hit_flop.png   <- Chart 3
 └── chart_yearly.png     <- Chart 4
 
-👤 Author
 Gunavant Rumne – Data Engineer at LTIMindtree
 
 📧 rumnegunavant@gmail.com
