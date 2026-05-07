@@ -36,7 +36,7 @@ for i in range(1000):
     cat = random.choice(genres)
     budget = round(random.uniform(1, 100), 1)
     revenue = round(random.uniform(0.5, 200), 1)
-        data.append({
+    data.append({
         "movie_id": i + 1,
         "title": random.choice(titles),
         "genre": cat,
@@ -111,7 +111,7 @@ class SmartMovieAgent:
 
         elif "average rating" in q or "avg rating" in q:
             return f"Average Rating: {self.df['rating'].mean():.1f} / 5.0"
-                elif "best platform" in q or "top platform" in q:
+        elif "best platform" in q or "top platform" in q:
             top = self.df.groupby("platform")["rating"].mean().idxmax()
             val = self.df.groupby("platform")["rating"].mean().max()
             return f"Best Platform: {top} (Avg Rating: {val:.1f})"
@@ -201,6 +201,3 @@ plt.savefig("chart_yearly.png", dpi=150)
 plt.show()
 
 print("\n🥳 ALL DONE! Download files from 📁 icon on left!")
-
-
-
